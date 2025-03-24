@@ -1,0 +1,121 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DFF2EB;
+    color: black;
+}
+#header-links{
+    
+    display: flex;
+    gap: 50px;
+    
+
+}
+#header-links a{
+    color: blue;
+    text-decoration: none;
+
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color:  #DFF2EB ;
+    color: white;
+   
+    text-align: center;
+}
+
+
+
+
+
+
+
+form {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #4A628A;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.logo {
+   
+    background-color: transparent ;
+    height: 80px;
+    
+}
+
+
+
+#chatbox {
+    background-color: #CB9DF0;
+    height: 300px;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#userInput {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #CB9DF0;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.signup-container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-color: #010401;
+}
+
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #CB9DF0;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #CB9DF0;
+    color: white;
+    padding: 5px;
+    border: black;
+    width: 100;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
