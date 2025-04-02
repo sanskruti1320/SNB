@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+    <link rel="stylesheet" href="CreatePost.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <h2>ProConnect</h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Connections</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="login.html" class="login">Login</a>
+        <a href="signup.html" class="signup">Signup</a>
+      </div>
+    </nav>
+
+    <main>
+      <h2>Create a New Post</h2>
+      <form id="createPostForm">
+        <input type="text" id="postTitle" placeholder="Post Title" required />
+        <textarea
+          id="postContent"
+          placeholder="Write something..."
+          required
+        ></textarea>
+
+        <!-- File input for image -->
+        <input type="file" id="postImage" accept="image/*" />
+
+        <button type="submit" class="submit-btn">Post</button>
+      </form>
+    </main>
+
+    <script src="CreatePost.js"></script>
+  </body>
+</html>

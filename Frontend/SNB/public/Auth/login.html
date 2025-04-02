@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | ProConnect</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <h2>ProConnect</h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Connections</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="login.html" class="login">Login</a>
+        <a href="signup.html" class="signup">Signup</a>
+      </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="login-container">
+      <h2>Login to ProConnect</h2>
+      <form class="login-form" id="login-form">
+        <input type="email" id="login-email" placeholder="Email" required />
+        <input
+          type="password"
+          id="login-password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <div class="divider">OR</div>
+
+      <!-- Google Login Button -->
+      <a href="./BusinessLogin.html">
+        <button class="google-login">Continue with Business Account</button></a
+      >
+
+      <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+
+      <script src="Auth.js"></script>
+    </div>
+  </body>
+</html>
