@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Login | ProConnect</title>
+    <link rel="stylesheet" href="BusinessLogin.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <h2>ProConnect</h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Connections</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="login.html" class="login">Login</a>
+        <a href="signup.html" class="signup">Signup</a>
+      </div>
+    </nav>
+
+    <!-- Business Login Form -->
+    <div class="login-container">
+      <h2>Business Login</h2>
+      <form id="businessLoginForm">
+        <div>
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" required />
+        </div>
+        <div>
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" required />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="BusinessReg.html">Create one</a></p>
+    </div>
+
+    <script src="businessAuth.js"></script>
+  </body>
+</html>

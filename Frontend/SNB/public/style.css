@@ -1,121 +1,111 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #DFF2EB;
-    color: black;
-}
-#header-links{
-    
-    display: flex;
-    gap: 50px;
-    
-
-}
-#header-links a{
-    color: blue;
-    text-decoration: none;
-
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    background-color:  #DFF2EB ;
-    color: white;
-   
-    text-align: center;
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #314b5e; /* Navbar Background */
+  padding: 15px 30px;
 }
 
-
-
-
-
-
-
-form {
-    width: 300px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #4A628A;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+/* Logo */
+.logo h2 {
+  color: #e4ecf1;
+  font-size: 24px;
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-
-.logo {
-   
-    background-color: transparent ;
-    height: 80px;
-    
+.nav-links li a {
+  text-decoration: none;
+  color: #a1bbce; /* Link Color */
+  font-size: 18px;
+  transition: 0.3s;
 }
 
-
-
-#chatbox {
-    background-color: #CB9DF0;
-    height: 300px;
-    overflow-y: scroll;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+.nav-links li a:hover {
+  color: #e4ecf1; /* Hover Effect */
 }
 
-#userInput {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
+/* Login & Signup Buttons */
+.auth-buttons a {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
-button {
-    background-color: #CB9DF0;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+.login {
+  color: #a1bbce;
+  border: 1px solid #a1bbce;
 }
 
-
-.signup-container {
-    width: 350px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-color: #010401;
+.login:hover {
+  background-color: #a1bbce;
+  color: #314b5e;
 }
 
-
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #CB9DF0;
-    border-radius: 5px;
+.signup {
+  background-color: #527d9c;
+  color: white;
 }
 
-button {
-    background-color: #CB9DF0;
-    color: white;
-    padding: 5px;
-    border: black;
-    width: 100;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+.signup:hover {
+  background-color: #1c2b35;
 }
 
+/* Hero Section Styling */
+.hero {
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #e4ecf1; /* Light Background */
+  padding: 50px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #1c2b35; /* Darkest Color */
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #314b5e; /* Slightly Darker */
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #527d9c; /* Button Color */
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #314b5e; /* Darker on Hover */
+}

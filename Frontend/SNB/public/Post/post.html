@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts</title>
+    <link rel="stylesheet" href="post.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <h2>ProConnect</h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Connections</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+        <a href="../Auth/login.html" class="login">Login</a>
+        <a href="../Auth/signup.html" class="signup">Signup</a>
+      </div>
+    </nav>
+
+    <main>
+      <h1>Posts here</h1>
+      <a href="./CreatePost.html">
+        <button id="createPostBtn" class="create-post-btn">Create Post</button>
+      </a>
+      <div id="welcome-message"></div>
+      <div id="posts-container" class="posts-container"></div>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // ✅ Check if a business or a normal user is logged in
+        let businessEmail = localStorage.getItem("loggedInBusinessEmail");
+        let currentUser = localStorage.getItem("currentUser");
+
+        if (!businessEmail && !currentUser) {
+          alert("You need to login to access this page!");
+          window.location.href = "../Auth/login.html";
+          return;
+        }
+
+        // ✅ Set the correct welcome message
+        if (businessEmail) {
+          let businesses =
+            JSON.parse(localStorage.getItem("businessAccounts")) || [];
+          let businessUser = businesses.find(
+            (user) => user.businessEmail === businessEmail
+          );
+          document.getElementById(
+            "welcome-message"
+          ).textContent = `Welcome, ${businessUser.businessName}!`;
+        } else if (currentUser) {
+          let user = JSON.parse(currentUser);
+          document.getElementById(
+            "welcome-message"
+          ).textContent = `Welcome, ${user.fullName}!`;
+        }
+
+        // ✅ Redirect to Create Post Page
+        document
+          .getElementById("createPostBtn")
+          .addEventListener("click", () => {
+            window.location.href = "../CreatePost.html";
+          });
+
+        // ✅ Logout functionality
+        document.getElementById("logoutBtn").addEventListener("click", () => {
+          localStorage.removeItem("businessLoggedIn");
+          localStorage.removeItem("loggedInBusinessEmail");
+          localStorage.removeItem("currentUser");
+          window.location.href = "../Auth/login.html";
+        });
+
+        // ✅ Fetch and Display Posts
+        const postsContainer = document.getElementById("posts-container");
+        let posts = JSON.parse(localStorage.getItem("posts")) || [];
+
+        posts.forEach((post) => {
+          let postCard = document.createElement("div");
+          postCard.classList.add("post-card");
+
+          postCard.innerHTML = `
+            <h3>${post.title}</h3>
+            <p>${post.content}</p>
+            ${
+              post.image
+                ? `<img src="${post.image}" alt="Post Image" class="post-image">`
+                : ""
+            }
+            <small>By: ${post.author}</small>
+          `;
+
+          postsContainer.appendChild(postCard);
+        });
+      });
+    </script>
+  </body>
+</html>

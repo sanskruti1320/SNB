@@ -1,0 +1,160 @@
+/* General Styles */
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #e4ecf1;
+  color: #314b5e;
+  margin: 0;
+  padding: 0;
+} */
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #314b5e;
+  padding: 0px 0px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo h2 {
+  color: #e4ecf1;
+  font-size: 24px;
+  margin-left: 1rem;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #a1bbce;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #e4ecf1;
+}
+
+/* Login & Signup Buttons */
+.auth-buttons a {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.login {
+  color: #a1bbce;
+  border: 1px solid #a1bbce;
+}
+
+.login:hover {
+  background-color: #a1bbce;
+  color: #314b5e;
+}
+
+.signup {
+  background-color: #527d9c;
+  color: white;
+  margin-right: 1rem;
+}
+
+.signup:hover {
+  background-color: #1c2b35;
+}
+
+/* Business Signup Form */
+/* Business Signup Page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e4ecf1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Signup Section */
+.business-signup {
+  width: 400px;
+  margin: 79px auto 30px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-left: 40px;
+}
+
+.business-signup h2 {
+  color: #314b5e;
+  margin-bottom: 15px;
+}
+
+/* Input Fields */
+.input-group {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #314b5e;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a1bbce;
+  border-radius: 5px;
+  background: #f9fbfc;
+}
+
+/* Signup Button */
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  background: #527d9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.signup-btn:hover {
+  background: #1c2b35;
+}
+
+/* Login Redirect */
+.login-redirect {
+  margin-top: 15px;
+  color: #314b5e;
+}
+
+.login-redirect a {
+  color: #527d9c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-redirect a:hover {
+  text-decoration: underline;
+}
