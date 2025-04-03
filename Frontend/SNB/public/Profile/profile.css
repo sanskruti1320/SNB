@@ -1,0 +1,118 @@
+/* Importing Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* Root Colors */
+:root {
+  --primary: #527d9c;
+  --secondary: #314b5e;
+  --background: #e4ecf1;
+  --text: #1c2b35;
+  --accent: #a1bbce;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary);
+  color: white;
+}
+
+.navbar .logo h2 {
+  margin: 0;
+  margin-left: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.auth-buttons .logout {
+  background-color: var(--primary);
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 2rem;
+}
+
+/* Profile Container */
+.profile-container {
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-card img.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  margin-bottom: 15px;
+}
+
+.profile-card h3 {
+  margin: 5px 0;
+  font-size: 22px;
+}
+
+.profile-card p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.profile-card a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.profile-card img.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.profile-card img.profile-pic:hover {
+  opacity: 0.7;
+}
+
+.upload-text {
+  font-size: 12px;
+  color: var(--accent);
+}
+a {
+  color: white;
+  text-decoration: none;
+}
