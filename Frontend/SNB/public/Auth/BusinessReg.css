@@ -158,3 +158,6 @@ body {
 .login-redirect a:hover {
   text-decoration: underline;
 }
+a {
+  text-decoration: none;
+}

@@ -189,3 +189,7 @@
   text-align: left;
   color: green;
 }
+
+a {
+  text-decoration: none;
+}

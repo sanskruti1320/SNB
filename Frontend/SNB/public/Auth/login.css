@@ -5,7 +5,9 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
 body {
   background-color: #e4ecf1;
   display: flex;
